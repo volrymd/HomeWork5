@@ -43,7 +43,7 @@ void Massive (int[] array)
                 index++;
             }
         } 
-        Console.WriteLine($"Второй массив: [{string.Join(" ", massive2)}]"); 
+        Console.WriteLine($"Массив с тройками: [{string.Join(" ", massive2)}]"); 
 
     int [] massive3 = new int [count2];
     int index2 = 0;
@@ -55,7 +55,7 @@ void Massive (int[] array)
                 index2++;
             }
         } 
-        Console.WriteLine($"Второй массив: [{string.Join(" ", massive3)}]"); 
+        Console.WriteLine($"Массив с четверками: [{string.Join(" ", massive3)}]"); 
 }                                                                                                                                                                      
 
 Console.Clear();
@@ -65,6 +65,6 @@ int[] array = new int [n];
 InputArray(array);
 Console.WriteLine ($"Исходный массив: [{string.Join(" ", array)}]");
 Massive (array);
-Console.WriteLine (FindCount(array));
+Console.WriteLine ($"Выйдет ли за четверть четверка: {FindCount(array)}");
 
 
