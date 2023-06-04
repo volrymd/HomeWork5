@@ -44,6 +44,18 @@ void Massive (int[] array)
             }
         } 
         Console.WriteLine($"Второй массив: [{string.Join(" ", massive2)}]"); 
+
+    int [] massive3 = new int [count2];
+    int index2 = 0;
+    for (int i = 0; i < array.Length; i++) 
+        {
+             if (array[i] % 2 == 0)
+            {
+                massive3[index2] = array[i];
+                index2++;
+            }
+        } 
+        Console.WriteLine($"Второй массив: [{string.Join(" ", massive3)}]"); 
 }                                                                                                                                                                      
 
 Console.Clear();
